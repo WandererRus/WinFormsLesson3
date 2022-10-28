@@ -10,6 +10,7 @@ namespace WinFormsLesson3
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 f = new Form2("Форма без переключения");
+            f.PubText = "Привет от материнской формы";
             f.ShowDialog();
             f.Close();
             Form2 f2 = new Form2("Форма с переключением");

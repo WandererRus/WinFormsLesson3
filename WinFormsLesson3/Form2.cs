@@ -12,6 +12,13 @@ namespace WinFormsLesson3
 {
     public partial class Form2 : Form
     {
+        public string PubText 
+        {
+            set 
+            {
+                lb_outText.Text = value;
+            }
+        }
         public Form2(string s)
         {
             InitializeComponent();
