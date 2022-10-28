@@ -12,22 +12,17 @@ namespace WinFormsLesson3
 {
     public partial class Form2 : Form
     {
-        public string PubText 
+        public string PubText // публичное свойство для приёма данных от родительской формы 
         {
             set 
             {
                 lb_outText.Text = value;
             }
         }
-        public Form2(string s)
+        public Form2(string s) // конструктор с переменной типа строка для получения данных от родительской формы
         {
             InitializeComponent();
-            this.Text = s;
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
+            this.Text = s; // назначение заголовка формы из переменной конструктора
         }
     }
 }
